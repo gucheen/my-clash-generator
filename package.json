@@ -1,0 +1,18 @@
+{
+  "name": "my-clash-generator",
+  "version": "1.0.0",
+  "description": "generate clash from remote config and add your customize config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^11.8.0",
+    "js-yaml": "^3.14.0",
+    "tunnel": "0.0.6"
+  }
+}
