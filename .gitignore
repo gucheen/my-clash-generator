@@ -1,0 +1,7 @@
+package-lock.json
+config.js
+config.yaml
+config-win.yaml
+.vercel
+node_modules
+.env
