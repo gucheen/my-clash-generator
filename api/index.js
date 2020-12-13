@@ -8,7 +8,14 @@ app.get('/api', (req, res) => {
   if (req.query.pwd !== process.env.SECRET_KEY) {
     return res.status(401);
   }
-  generate()
+  let platform = ''
+  const ua = req.get('User-Agent');
+  if (ua.includes('Windows')) {
+    platform = 'win'
+  }
+  generate({
+    platform,
+  })
   .then(yaml => {
     const filePath = path.resolve(os.tmpdir(), 'config.yaml')
     fs.writeFile(filePath, yaml, (error) => {
