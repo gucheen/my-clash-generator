@@ -46,8 +46,8 @@ module.exports.config = {
     'IP-CIDR,::1/128,DIRECT,no-resolve',
     'IP-CIDR,fc00::/7,DIRECT,no-resolve',
     'IP-CIDR,fe80::/10,DIRECT,no-resolve',
-    'DOMAIN-SUFFIX,cn,DIRECT',
     'DOMAIN-KEYWORD,google,🔰国外流量',
+    'DOMAIN-SUFFIX,cn,DIRECT',
     'GEOIP,CN,DIRECT',
     'MATCH,🔰国外流量'
   ]
