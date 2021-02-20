@@ -1,5 +1,5 @@
 module.exports.config = {
-  'redir-port': 7892,
+  // 'redir-port': 7892,
   'mixed-port': 7890,
   'allow-lan': false,
   'bind-address': '*',
@@ -7,6 +7,7 @@ module.exports.config = {
   'log-level': 'silent',
   ipv6: false,
   'external-controller': '127.0.0.1:9090',
+  'external-ui': 'ui',
   hosts: null,
   dns: {
     enable: false,
